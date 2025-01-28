@@ -14,7 +14,9 @@ export class App {
 
   c = computed(()=> this.a() + this.b()); // output 5
   constructor(){
-    this.a.set(2) 
+    setTimeout(()=>{
+      this.a.set(2) 
+    },5000)
   }
 
 }
